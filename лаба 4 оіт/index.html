@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профспілкова організація студентів ЧНУ</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header id="header">
+  <h1>Профспілкова організація студентів ЧНУ</h1>
+</header>
+
+<!-- Навігаційна панель -->
+<aside>
+  <ul class="side-menu">
+    <li><a href="#about">Про нас</a></li>
+
+    <li class="has-submenu">
+      <a href="#cards">Наша команда <span class="arrow">▼</span></a>
+      <ul class="submenu">
+        <li><a href="#cards">Голова</a></li>
+        <li><a href="#cards">Заступники</a></li>
+        <li><a href="#cards">Члени команди</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#news">Новини</a></li>
+    <li><a href="#survey">Опитування</a></li>
+    <li><a href="#contact">Зворотний зв'язок</a></li>
+  </ul>
+
+  <!-- ПОШУК + SIGN IN -->
+  <div class="right-controls">
+    <form class="search-form">
+      <input type="search" placeholder="Пошук..." class="search-input">
+      <button type="submit" class="search-btn">🔍</button>
+    </form>
+
+    <button class="signin-btn" onclick="openModal()">Sign in</button>
+  </div>
+</aside>
+
+<!-- ===================== ПРО НАС ===================== -->
+<section id="about">
+  <h1>Що ви повинні знати?</h1>
+  <p>Профспілка — це команда, яка захищає права та інтереси студентів,
+    організовує заходи, конкурси, освітні проєкти.
+    Разом ми робимо життя університету яскравішим та цікавішим!</p>
+</section>
+
+<!-- ===================== КАРТКИ ===================== -->
+<section id="cards">
+  <h2>Наша команда</h2>
+
+  <div class="card-container">
+    <article class="card">
+      <div class="image-hover">
+        <img src="person1.jpg" alt="Голова профспілки">
+        <div class="hover-text">Голова профспілки</div>
+      </div>
+      <h3>Головатий Михайло</h3>
+    </article>
+
+    <article class="card">
+      <div class="image-hover">
+        <img src="person2.jpg" alt="Заступник">
+        <div class="hover-text">Заступник голови</div>
+      </div>
+      <h3>Білан Владислав</h3>
+    </article>
+
+    <article class="card">
+      <div class="image-hover">
+        <img src="person3.jpg" alt="Заступниця">
+        <div class="hover-text">Заступниця голови</div>
+      </div>
+      <h3>Лозовська Анастасія</h3>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== НОВИНИ ===================== -->
+<section id="news">
+  <h2>Новини</h2>
+  <article>
+    <h3>За останній місяць 🎉</h3>
+    <p>Останнім часом профспілка активно розвиває студентське життя факультетів …</p>
+  </article>
+
+  <article>
+    <h3>Наші соцмережі:</h3>
+    <p>Підписуйтесь на наш
+      <a href="https://t.me/studprofkom_cv_ua" target="_blank">Telegram</a> та
+      <a href="https://instagram.com/studprofkom.cv.ua" target="_blank">Instagram</a>.
+    </p>
+  </article>
+</section>
+
+<!-- ===================== ОПИТУВАННЯ ===================== -->
+<section id="survey">
+  <h2>Опитування студентів</h2>
+
+  <form>
+    <label for="login">Логін:</label>
+    <input type="text" id="login" required>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" placeholder="@chnu.edu.ua" required>
+
+    <label for="message">Ваші пропозиції:</label>
+    <textarea id="message" rows="3"></textarea>
+
+    <label for="faculty">Ваш факультет:</label>
+    <select id="faculty" required>
+      <option disabled selected>Оберіть факультет</option>
+      <option>ФІМ</option>
+      <option>Іноземних мов</option>
+      <option>ІНБХБ</option>
+      <option>Історичний</option>
+      <option>Економічний</option>
+      <option>Біологічний</option>
+      <option>ІФТКН</option>
+      <option>Фізкультурний</option>
+      <option>Педагогіки та психології</option>
+    </select>
+
+    <p>Форма навчання:</p>
+    <label><input type="radio" name="study" required> Денна</label>
+    <label><input type="radio" name="study"> Заочна</label>
+<p>Чи хочете брати участь у заходах?</p>
+    <label><input type="radio" name="events" required> Так</label>
+    <label><input type="radio" name="events"> Ні</label>
+
+    <p>Ваші інтереси:</p>
+    <label><input type="checkbox"> Спорт</label>
+    <label><input type="checkbox"> Музика</label>
+    <label><input type="checkbox"> Подорожі</label>
+
+    <br><br>
+    <button type="submit">Надіслати</button>
+    <button type="reset">Очистити</button>
+  </form>
+</section>
+
+<!-- ===================== ЗВОРОТНИЙ ЗВ’ЯЗОК ===================== -->
+<section id="contact">
+  <h2>Зв'яжіться з нами</h2>
+
+  <form>
+    <label>Ім'я:
+      <input type="text" required>
+    </label>
+
+    <label>Email:
+      <input type="email" required>
+    </label>
+
+    <textarea placeholder="Ваше повідомлення" required></textarea>
+
+    <button type="submit">Надіслати</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Профспілкова організація студентів ЧНУ</p>
+</footer>
+
+<a href="#header" class="scroll-top">↑</a>
+
+<!-- ===================== МОДАЛЬНЕ ВІКНО ===================== -->
+<div id="auth-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>Авторизація</h2>
+
+    <label>Email:</label>
+    <input type="email" placeholder="@chnu.edu.ua">
+
+    <label>Пароль:</label>
+    <input type="password" minlength="6" placeholder="Введіть пароль">
+
+    <button class="modal-btn">Увійти</button>
+  </div>
+</div>
+
+<!-- ===================== JS ===================== -->
+<script>
+function openModal() {
+  document.getElementById("auth-modal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("auth-modal").style.display = "none";
+}
+
+window.onclick = function(e) {
+  let modal = document.getElementById("auth-modal");
+  if (e.target === modal) closeModal();
+}
+</script>
+
+</body>
+</html>

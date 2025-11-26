@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+      width: 300px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Реєстрація</h2>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" placeholder="@chnu.edu.ua" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" placeholder="Введіть пароль" minlength="6" required>
+    <small>Мінімум 6 символів</small>
+
+    <label for="confirm">Повторіть пароль:</label>
+    <input type="password" id="confirm" name="confirm" placeholder="Повторіть пароль" minlength="6" required>
+
+    <button type="submit">Зареєструватись</button>
+    <button type="reset">Очистити</button>
+  </form>
+</body>
+</html>
